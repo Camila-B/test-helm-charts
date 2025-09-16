@@ -19,3 +19,6 @@ spec:
       - image: nginx
         imagePullPolicy: Always
         name: nginx
+        env:
+          - name: TEST_ENV
+            value: {{ .Values.testEnv | quote }}      
