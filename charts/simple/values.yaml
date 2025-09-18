@@ -3,3 +3,5 @@ data:
     name: test-image
     tag: v1.0.0
     imagePullPolicy: Always
+
+foo: bar
