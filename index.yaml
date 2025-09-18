@@ -1,5 +1,15 @@
 apiVersion: v1
 entries:
+  simple:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-18T21:08:18.057013243Z"
+    description: A simple test helm chart.
+    digest: 16574979f92ea172746b43956b87181e3e9ef42d4172bfe547f6b6c8321d931e
+    name: simple
+    urls:
+    - https://github.com/Camila-B/test-helm-charts/releases/download/simple-1.0.0/simple-1.0.0.tgz
+    version: 1.0.0
   test-chart:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/Camila-B/test-helm-charts/releases/download/test-chart-0.1.1/test-chart-0.1.1.tgz
     version: 0.1.1
-generated: "2025-09-16T21:25:33.617914773Z"
+generated: "2025-09-18T21:08:18.057024454Z"
