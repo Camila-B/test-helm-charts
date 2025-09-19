@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "simple.fullname" . }}
+  # name: {{ .Release.Name }}-test-deployment
+  labels:
+    {{- include "simple.labels" . | nindent 4 }}
+  annotations:
+    foo: {{ .Values.annotations.foo }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "simple.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "simple.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - image: nginx
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        name: nginx
+        resources:
+            {{- toYaml .Values.resources | nindent 12 }}
