@@ -11,6 +11,15 @@ entries:
     - https://github.com/Camila-B/test-helm-charts/releases/download/simple-1.0.0/simple-1.0.0.tgz
     version: 1.0.0
   test-chart:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-20T00:32:44.846862342Z"
+    description: A simple test helm chart to be used for Config Sync E2E tests.
+    digest: 8f15210befb981f4db6644f670f643a7c738d8a79a29201fde07620df1a5e82e
+    name: test-chart
+    urls:
+    - https://github.com/Camila-B/test-helm-charts/releases/download/test-chart-1.0.0/test-chart-1.0.0.tgz
+    version: 1.0.0
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2025-09-16T21:25:33.617908782Z"
@@ -21,4 +30,15 @@ entries:
     urls:
     - https://github.com/Camila-B/test-helm-charts/releases/download/test-chart-0.1.1/test-chart-0.1.1.tgz
     version: 0.1.1
-generated: "2025-09-18T21:08:18.057024454Z"
+  test-chart-old:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-09-20T00:32:44.987530643Z"
+    description: A Helm chart for Kubernetes
+    digest: 6d3754e990a92eacce0ca21db77d85dd9ae43368c9e34cb15f4e2ab5a1baf70f
+    name: test-chart-old
+    type: application
+    urls:
+    - https://github.com/Camila-B/test-helm-charts/releases/download/test-chart-old-0.1.2/test-chart-old-0.1.2.tgz
+    version: 0.1.2
+generated: "2025-09-20T00:32:44.987541994Z"
