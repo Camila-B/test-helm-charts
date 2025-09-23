@@ -10,6 +10,16 @@ entries:
     urls:
     - https://github.com/Camila-B/test-helm-charts/releases/download/simple-1.0.0/simple-1.0.0.tgz
     version: 1.0.0
+  simple-pause:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-23T02:15:29.887022784Z"
+    description: A simple test chart to be used for Config Sync E2E tests.
+    digest: a55f107f299db30ee329c77553c6d53de470af1e2f6eb19666d6d0bfabb2b62a
+    name: simple-pause
+    urls:
+    - https://github.com/Camila-B/test-helm-charts/releases/download/simple-pause-1.0.0/simple-pause-1.0.0.tgz
+    version: 1.0.0
   test-chart:
   - apiVersion: v1
     appVersion: "1.0"
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://github.com/Camila-B/test-helm-charts/releases/download/test-chart-old-0.1.2/test-chart-old-0.1.2.tgz
     version: 0.1.2
-generated: "2025-09-20T00:32:44.987541994Z"
+generated: "2025-09-23T02:15:29.887039306Z"
