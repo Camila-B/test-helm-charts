@@ -5,9 +5,10 @@ nameOverride: ""
 fullnameOverride: ""
 
 image:
-  repository: nginx
-  pullPolicy: IfNotPresent
+  repository: registry.k8s.io/pause
+  pullPolicy: Never
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "3.10"
+  name: "pause"
 
 resources: {}

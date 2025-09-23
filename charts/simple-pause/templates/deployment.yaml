@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "simple.fullname" . }}
-  # name: {{ .Release.Name }}-test-deployment
   labels:
     {{- include "simple.labels" . | nindent 4 }}
   annotations:
@@ -18,8 +17,8 @@ spec:
         {{- include "simple.selectorLabels" . | nindent 8 }}
     spec:
       containers:
-      - image: nginx
+      - image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        name: nginx
+        name: {{ .Values.image.name}}
         resources:
             {{- toYaml .Values.resources | nindent 12 }}
